@@ -1,18 +1,14 @@
 <?php
-date_default_timezone_set('Asia/Jakarta');
-
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "webdailyjournal";
+$database = "nama_database";
 
-//create connection
-$conn = new mysqli($servername, $username, $password, $db);
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $database);
 
-//check connection
-if($conn->connect_error){
-    die("Connection Failed : " . $conn->connect_error);
+// Periksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
-
-;
 ?>
